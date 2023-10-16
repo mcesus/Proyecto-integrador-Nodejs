@@ -84,6 +84,10 @@ a{
     font-family: inherit;
    
 }
+
+img{
+    max-width: 100%;
+}
 header,
 footer{
     font-family: var(--alternative-font);
@@ -101,4 +105,66 @@ p{
 .container{
     max-width: 1200px;
     margin: 0 auto;
+}
+
+
+ /* HEADER*/
+
+
+ header{
+    background-color: var(--dark-bg-solid);
+    padding: var(--spacing-36);
+
+ }
+ .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ .navbar__logo{
+    max-width: 300px;
+ }
+
+ .navbar__menu{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-20);
+ }
+
+ .navbar__link{
+    font-size: var(--font-medium);
+    padding: var(--spacing-8 ) var(--spacing-16);
+    display: inline-block;
+    transition: background .3s ease-in-out;
+    position: relative;
+ }
+
+ .navbar__link:hover{
+    background-color: var(--primay-900);
+ }
+ .width-icon{
+    display: flex;
+    align-items:  center;
+    gap: var(--spacing-8);
+}
+
+.width__submenu:hover .submenu{
+   display: block;
+}
+.submenu{
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+    display: none;
+    width: 300px;
+}
+.submenu__link{
+    display: block;
+    padding: var(--spacing-8)var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background .3s ease-in-out;
+}
+
+.submenu__link:hover{
+    background-color: var(--primay-900);
 }
